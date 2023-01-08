@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 const startServer = async () => {
 
     try {
-        await mongoose.connect(`MONGODB URL`);
+        await mongoose.connect("mongodb+srv://healthindia31:healthindia@userauth.vzlbehd.mongodb.net/?retryWrites=true&w=majority");
 
         app.listen(PORT, () => console.log(`Server is running at port ${PORT} and Database Connected`));
 
